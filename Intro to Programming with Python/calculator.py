@@ -19,7 +19,7 @@ def main():
     print(f'x squared is {square(x)}')
 
 def square(num):
-    return num+num #num**2
+    return num**2
 
 if __name__ == '__main__':
     main()
