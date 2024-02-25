@@ -1,5 +1,7 @@
+#%%
 log= {}
 import datetime as dt
+#%%
 def create_function_log(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
@@ -7,9 +9,16 @@ def create_function_log(func):
         return result
     return wrapper
 
+#%%
 @create_function_log
 def add(x, y):
     return x + y
-print(add(5,7))
+
+#%%
+print(add(5, 7))
+#%%
+print(add(5, 10))
+#%%
 print(add(50, 7))
 print(log)
+# %%
