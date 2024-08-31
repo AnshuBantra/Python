@@ -1,0 +1,97 @@
+﻿industry_name,number_of_firms,total_taxable_income,total_taxes_paid,total_cash_taxes_paid
+Advertising,58,3891.414,961.68,940.393
+Aerospace/Defense,77,30920.169,5106.376,7441.776
+Air Transport,21,1820.39,655.214,240.024
+Apparel,39,5422.69,1112.113,1479.292
+Auto & Truck,31,33358.2,3529,2446.896
+Auto Parts,37,4200.23,905.547,1298.506
+Bank (Money Center),7,124977.19,21450.27,12205
+Banks (Regional),557,85659.233,18035.351,32391.214
+Beverage (Alcoholic),23,2643.695,923.338,804.714
+Beverage (Soft),31,28431.2,5170.927,5315.261
+Broadcasting,26,11808.34,2592.14,1261.26
+Brokerage & Investment Banking,30,52532.785,10939.419,12537.104
+Building Materials,45,19465.75,4291.337,4094.025
+Business & Consumer Services,164,18477.277,4164.267,4534.729
+Cable TV,10,25912.3,7726.2,6595.7
+Chemical (Basic),38,19590.78,4107.522,2257.59
+Chemical (Diversified),4,2819.5,494.9,344.32
+Chemical (Specialty),76,32843.49,7067.406,6000.614
+Coal & Related Energy,19,3025.34,175.1,23.7
+Computer Services,80,12837.58,2683.325,4721.034
+Computers/Peripherals,42,130404.945,21779.468,22648.56
+Construction Supplies,49,20521.739,4340.162,3858.571
+Diversified,23,15059.6,2404.9,9101.828
+Drugs (Biotechnology),598,59505.96,8480.333,12408.015
+Drugs (Pharmaceutical),281,95301.319,11581.182,24143.713
+Education,33,1282.4,369.7,561.261
+Electrical Equipment,110,13059.93,2625.546,2889.04
+Electronics (Consumer & Office),16,175.7,17.684,37.875
+Electronics (General),138,13560.414,2576.403,2565.911
+Engineering/Construction,43,4452.052,1018.78,729.673
+Entertainment,110,16613.989,3504.639,4032.532
+Environmental & Waste Services,62,6606.47,1460.968,976.708
+Farming/Agriculture,39,19423.901,3891.301,3787.074
+Financial Svcs. (Non-bank & Insurance),223,136450.82,28491.872,22331.683
+Food Processing,92,26368.217,5246.152,6901.425
+Food Wholesalers,14,3119.4,694.2,505.65
+Furn/Home Furnishings,32,3134.799,1027.66,1125.188
+Green & Renewable Energy,19,2471.19,347.06,95.879
+Healthcare Products,254,27444.919,4253.458,6427.905
+Healthcare Support Services,131,67809.816,14939.723,15428.422
+Heathcare Information and Technology,138,27164.361,4297.602,6888.842
+Homebuilding,32,32663.5,7553.31,5652.22
+Hospitals/Healthcare Facilities,34,12355.128,2979.258,2611.014
+Hotel/Gaming,69,16641.26,3968.179,3796.443
+Household Products,127,30616.809,6172.314,7358.871
+Information Services,73,49631.133,9482.033,11161.666
+Insurance (General),21,28714.79,5851.687,2934.036
+Insurance (Life),27,23040.936,3352.16,4123.882
+Insurance (Prop/Cas.),51,17408.7,3459.46,5570.129
+Investments & Asset Management,600,43946.034,7998.826,9450.869
+Machinery,116,21096.828,4427.081,5507.827
+Metals & Mining,68,13170.536,5058.41,3400.439
+Office Equipment & Services,16,652,157.97,184.478
+Oil/Gas (Integrated),4,131383.1,30387.173,22217.31
+Oil/Gas (Production and Exploration),174,115632.914,24231.135,11970.642
+Oil/Gas Distribution,23,11420.18,1910.85,109.032
+Oilfield Svcs/Equip.,101,58215.58,12273.744,5895.05
+Packaging & Container,25,12094.928,2464.6,2880.64
+Paper/Forest Products,7,2125.8,548.4,408.8
+Power,48,38842.12,5233.073,2289.728
+Precious Metals,74,1675.573,747.516,1837.354
+Publishing & Newspapers,20,1360.295,208.1,394.955
+R.E.I.T.,223,58872.924,2521.535,1933.726
+Real Estate (Development),18,658.41,151.19,66.603
+Real Estate (General/Diversified),12,251.69,57.58,42.407
+Real Estate (Operations & Services),60,6114.981,1236.989,1426.088
+Recreation,57,5840.23,1170.723,1191.095
+Reinsurance,1,617,40,163
+Restaurant/Dining,70,18326.144,3903.997,4484.914
+Retail (Automotive),30,17548.78,4134.3,3743.026
+Retail (Building Supply),15,34697,8645.21,8272.94
+Retail (Distributors),69,20043.644,4701.598,3790.42
+Retail (General),15,35470.9,9012.1,11642.26
+Retail (Grocery and Food),13,6743.1,1503.52,1317.732
+Retail (Online),63,10270.757,45.228,5817.395
+Retail (Special Lines),78,24931.457,5129.405,5660.914
+Rubber& Tires,3,692.122,0,201
+Semiconductor,68,81555.44,8329.074,13839.779
+Semiconductor Equip,30,21173.363,2859.206,3629.544
+Shipbuilding & Marine,8,2490.5,387.402,293.36
+Shoe,13,8846.1,1256.65,493.2
+Software (Entertainment),91,115204.898,18337.012,19016.346
+Software (Internet),33,2065.3,394.6,527.761
+Software (System & Application),390,117515.379,20894.612,23839.879
+Steel,28,33060.03,6819.11,4812.107
+Telecom (Wireless),16,2288.9,108.6,146.132
+Telecom. Equipment,79,19138.631,3530.433,5291.668
+Telecom. Services,49,53415.458,11807.39,4065.627
+Tobacco,15,19044.37,4802.087,5750.909
+Transportation,18,23909.13,5299.926,3449.639
+Transportation (Railroads),4,18521,4128,3585.334
+Trucking,35,17324.358,4233.55,2088.072
+Utility (General),15,17050,2838.76,1781.66
+Utility (Water),16,2530.7,457.08,51.987
+Total Market,7165,2669470.334,502642.371,506550.816
+Total Market (without financials),5649,2156739.846,403063.326,405006.899
