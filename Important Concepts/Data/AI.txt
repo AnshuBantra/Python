@@ -1,0 +1,12 @@
+Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, language understanding, and even creativity.
+
+AI systems work by processing large amounts of data, identifying patterns, and making decisions based on those patterns. For example, AI can power virtual assistants like Siri and Alexa, recommend products on e-commerce sites, and even drive autonomous vehicles.
+
+Given your background in data analysis and engineering, you might find it interesting how AI can be integrated with data tools like Python and SQL to enhance data processing and visualization tasks. Have you worked on any AI-related projects before?
+
+Source: Conversation with Copilot, 23/09/2024
+(1) What is AI, how does it work and what can it be used for? - BBC. https://www.bbc.com/news/technology-65855333.
+(2) Artificial intelligence - Wikipedia. https://en.wikipedia.org/wiki/Artificial_intelligence.
+(3) What is AI? What does artificial intelligence do? - BBC. https://www.bbc.co.uk/newsround/49274918.
+(4) What Is Artificial Intelligence (AI)? | IBM. https://www.ibm.com/topics/artificial-intelligence.
+(5) Artificial Intelligence (AI): At a Glance | Britannica. https://www.britannica.com/topic/Artificial-Intelligence-AI-At-a-Glance-2235722.
