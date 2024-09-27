@@ -36,9 +36,22 @@ def retry(retries: int = 3, delay: float = 1) -> typ.Callable:
 
     return decorator
 
-def timer(func: typ.Callable) -> typ.Callable:
+def timer_simple(func: typ.Callable) -> typ.Callable:
     def wrapper(*args, **kwargs) -> typ.Any:
         t1 = time.time()
-        func(*args, **kwargs)
-        print(f'{func.__name__} took {time.time()-t1} secs. !')
+        result = func(*args, **kwargs)
+        print(f'{func.__name__} took {time.time()-t1:.4f} secs. !')
+        return f'Total of {result} lines in file'
     return wrapper
+
+def timer_advanced(func: typ.Callable) -> typ.Callable:
+    @fct.wraps(func)
+    def wrapper(*args, **kwargs) -> typ.Any:
+        t1 = time.time()
+        result = func(*args, **kwargs)
+        print(f'{func.__name__} took {time.time()-t1:.4f} secs. !')
+        return f'Total of {result} lines in file'
+    return wrapper
+
+def new():
+    ...
