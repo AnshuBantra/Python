@@ -1,0 +1,20 @@
+#  https://www.youtube.com/watch?v=3xyoM28B40Y&t=262s
+
+# https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+# https://medium.com/@anshita.bhasin/a-step-by-step-guide-to-create-dockerfile-9e3744d38d11
+
+curl -LfO "https://airflow.apache.org/docs/apache-airflow/2.10.2/docker-compose.yaml"
+
+mkdir ./dags, ./logs, ./plugins, ./config
+# $AIRFLOW_UID = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
+$AIRFLOW_UID=50000
+"Airflow_UID=$AIRFLOW_UID" | Out-File -Encoding utf8 .env
+
+$AIRFLOW_UID=50000
+
+# https://docs.docker.com/desktop/install/windows-install/
+# Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+# Install-Package -Name docker -ProviderName DockerMsftProvider
+# winget install --id Docker.DockerCompose
+
+docker compose up airflow-init
