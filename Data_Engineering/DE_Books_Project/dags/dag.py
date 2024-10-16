@@ -1,22 +1,23 @@
-# dag - direct acyclic graph
-# tasks
-    #
-    #
-    #
-# operators
-    # Python Operator
-    # Postgres Operator
-# hooks
-    # COnnection to Postgres
-# dependencies
+# Notes
+    # dag - direct acyclic graph
+    # tasks
+        #
+        #
+        #
+    # operators
+        # Python Operator
+        # Postgres Operator
+    # hooks
+        # COnnection to Postgres
+    # dependencies
 
 
-#dag - directed acyclic graph
+    #dag - directed acyclic graph
 
-#tasks : 1) fetch amazon data (extract) 2) clean data (transform) 3) create and store data in table on postgres (load)
-#operators : Python Operator and PostgresOperator
-#hooks - allows connection to postgres
-#dependencies
+    #tasks : 1) fetch amazon data (extract) 2) clean data (transform) 3) create and store data in table on postgres (load)
+    #operators : Python Operator and PostgresOperator
+    #hooks - allows connection to postgres
+    #dependencies
 
 from datetime import datetime, timedelta
 from airflow import DAG
@@ -27,7 +28,38 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
-#1) fetch amazon data (extract) 2) clean data (transform)
+
+#1) 
+def read_book_data_from_postgres() -> pd.DataFrame:
+
+    postgres_hook = PostgresHook(postgres_conn_id='books_connection')
+    read_query = """
+    SELECT  DISTINCT
+            title
+            , authors
+        FROM
+            books
+    """
+    # Execute the query and fetch the data
+    connection = postgres_hook.get_conn()
+    cursor = connection.cursor()
+    cursor.execute(read_query)
+    result = cursor.fetchall()
+    
+    # Fetch column names for the DataFrame
+    column_names = [desc[0] for desc in cursor.description]
+    
+    # Convert the result into a pandas DataFrame
+    df = pd.DataFrame(result, columns=column_names)
+    
+    # Close the cursor and connection
+    cursor.close()
+    connection.close()
+    
+    return df
+
+
+#2) fetch amazon data (extract) 2) clean data (transform)
 
 headers = {
     "Referer": 'https://www.amazon.com.au/',
@@ -38,7 +70,7 @@ headers = {
 }
 
 
-def get_amazon_data_books(num_books, ti):
+def get_amazon_data_books(ti, num_books=10000):
     # Base URL of the Amazon search results for data science books
     base_url = f"https://www.amazon.com/s?k=data+engineering+books"
 
@@ -88,7 +120,7 @@ def get_amazon_data_books(num_books, ti):
             break
 
     # Limit to the requested number of books
-    books = books[:num_books]
+    # books = books[:num_books]
     
     # Convert the list of dictionaries into a DataFrame
     df = pd.DataFrame(books)
@@ -97,6 +129,9 @@ def get_amazon_data_books(num_books, ti):
     df.drop_duplicates(subset="Title", inplace=True)
     df['Price'] = df['Price'].astype(float)
     df[['Rating', 'Rating_Out_Of']] = df.loc[:,'Rating'].str.replace(' stars', '').str.split(' out of ', expand=True)
+
+    df_current = read_book_data_from_postgres()
+    df = df[~df.apply(tuple, 1).isin(df_current.apply(tuple,1))]
     
     # Push the DataFrame to XCom
     ti.xcom_push(key='book_data', value=df.to_dict('records'))
@@ -112,6 +147,7 @@ def insert_book_data_into_postgres(ti):
     insert_query = """
     INSERT INTO books (title, authors, price, rating, rating_out_of)
     VALUES (%s, %s, %s, %s, %s)
+    ON CONFLICT (title) DO NOTHING
     """
     for book in book_data:
         postgres_hook.run(insert_query, parameters=(book['Title'], book['Author'], book['Price'], book['Rating'], book['Rating_Out_Of']))
@@ -139,7 +175,7 @@ dag = DAG(
 fetch_book_data_task = PythonOperator(
     task_id='fetch_book_data',
     python_callable=get_amazon_data_books,
-    op_args=[50],  # Number of books to fetch
+    # op_args=[50],  # Number of books to fetch
     dag=dag,
 )
 
