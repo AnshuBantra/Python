@@ -1,0 +1,11 @@
+add returned value 30
+add returned value 30
+add returned value 6789
+
+add returned value 156
+Function add callled at <class 'datetime.datetime'> and returned value 77
+Function add callled at 2024-10-16 14:46:27.988292 and returned value 77
+Function add callled at 2024-10-16 14:46:38.427958 and returned value 82
+Function add callled at 2024-10-16 14:53:08.338365 and returned value 9
+Function add callled at 2024-10-16 14:53:18.400794 and returned value 9
+Function add callled at 2024-10-16 14:53:29.339460 and returned value 11
