@@ -24,5 +24,10 @@ class TestRearrange(unittest.TestCase):
     expected = "Jean Claude Van Dam"
     self.assertEqual(rearrange_name(testcase), expected)
 
+  def test_one_name(self):
+    testcase = "Daata"
+    expected = "Daata"
+    self.assertEqual(rearrange_name(testcase), expected)
+
 # Run the tests
 unittest.main()
