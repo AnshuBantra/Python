@@ -12,7 +12,7 @@ def main():
     if check_reboot():
         print('Pending Reboot.')
         sys.exit(1)
-    print('Everything OK.')
+    print('Everything Ok.')
     sys.exit(0)
 
 if __name__ == '__main__':
