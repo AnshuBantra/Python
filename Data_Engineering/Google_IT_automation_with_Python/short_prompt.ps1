@@ -12,6 +12,8 @@ function prompt {
                 $branchColor = 'Red'
             }
             $branch = "[$branch] "
+        } else {
+            $branch = "[] "
         }
     }
 
@@ -20,11 +22,13 @@ function prompt {
     if ($env:VIRTUAL_ENV) {
         $venvName = Split-Path -Leaf -Path $env:VIRTUAL_ENV
         $venv = "(venv: $venvName) "
+    } else {
+        $venv = "() "
     }
 
     # Set colored prompt
     Write-Host -NoNewline -ForegroundColor Blue "$p "
     Write-Host -NoNewline -ForegroundColor $branchColor "$branch"
     Write-Host -NoNewline -ForegroundColor Yellow "$venv"
-    return '> '
+    return '>> '
 }
