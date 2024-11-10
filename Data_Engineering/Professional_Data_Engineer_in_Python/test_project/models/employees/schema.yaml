@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: employees
+    description: Employee Data from CSV file
+    access: public
