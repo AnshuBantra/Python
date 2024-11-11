@@ -1,0 +1,4 @@
+John Smith
+40000
+John Tri-Volta
+60000
