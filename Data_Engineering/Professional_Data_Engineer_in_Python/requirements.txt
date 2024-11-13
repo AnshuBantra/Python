@@ -1,2 +1,6 @@
 dbt-core
 dbt-duckdb
+pandas
+SQLAlchemy
+psycopg2
+redis
