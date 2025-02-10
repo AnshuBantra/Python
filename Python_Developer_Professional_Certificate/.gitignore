@@ -1,0 +1,4 @@
+venv/
+.mypy_cache/
+.DS_Store
+~/Documents/code/python/.DS_Store
