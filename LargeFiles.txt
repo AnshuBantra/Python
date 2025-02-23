@@ -1,0 +1,15 @@
+
+
+
+2025-02-17
+==========
+Folder Name, File Name, Size, Size Group
+/Users/abantra/Documents/code/python/Ultimate Data Science And GENAI Bootcamp/.git/objects/pack\, pack-e12978542e2fac17ec3e86fbaa251ce6233a3770.pack, 626.82, MB
+/Users/abantra/Documents/code/python/.git/objects/pack\, pack-bbdb4470fbd465996be338a6f79fb4ebc6cef571.pack, 615.57, MB
+
+
+2025-02-17
+==========
+Folder Name, File Name, Size, Size Group
+/Users/abantra/Documents/code/python/Ultimate Data Science And GENAI Bootcamp/.git/objects/pack, pack-e12978542e2fac17ec3e86fbaa251ce6233a3770.pack, 626.82, MB
+/Users/abantra/Documents/code/python/.git/objects/pack, pack-bbdb4470fbd465996be338a6f79fb4ebc6cef571.pack, 615.57, MB
