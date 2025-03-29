@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 name,species,legs,wings
 Butterfly,Lepidoptera,6,2
 Beetle,Coleoptera,4,2
 Ant,Hymenoptera,6,0
 Spider,Araneae,8,0
+=======
+name,species,legs,wings
+Butterfly,Lepidoptera,6,2
+Beetle,Coleoptera,4,2
+Ant,Hymenoptera,6,0
+Spider,Araneae,8,0
+>>>>>>> f0f0aef6f7ad1cd710ccd4b26a585dc07f0093da
