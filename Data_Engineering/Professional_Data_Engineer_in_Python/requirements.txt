@@ -4,3 +4,4 @@ pandas
 SQLAlchemy
 psycopg2
 redis
+pyspark
