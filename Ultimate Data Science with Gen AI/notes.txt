@@ -1,0 +1,2 @@
+conda create -p venv python==3.12 # to create environment in the current directory
+conda create -n venv python==3.12 # to create environment in the conda environment
