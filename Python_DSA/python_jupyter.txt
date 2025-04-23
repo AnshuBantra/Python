@@ -1,0 +1,12 @@
+-- Uninstall existing Jupyter Kernel
+jupyter kernelspec uninstall clean_jupyter
+
+-- Create new Jupyter Kernel
+python -m ipykernel install --user --name=Python_DSA --display-name "Python_DSA"
+
+-- Check Exiting Kernels
+jupyter kernelspec list
+
+
+-- Edit Kernel JSON File Manually
+open -e /Users/abantra/Library/Jupyter/kernels/python_dsa/kernel.json
